@@ -7,7 +7,7 @@ router = APIRouter(prefix="", tags=["endpoint_test"])
 
 
 @router.get("/")
-def protected_route():
+def public_route():
     return {"message": "Welcome to endpoint test"}
 
 
