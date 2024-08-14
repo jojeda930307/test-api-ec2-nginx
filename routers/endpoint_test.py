@@ -3,10 +3,10 @@ from fastapi import APIRouter, Depends
 from models.model import User
 from security.get_current_user import get_current_user
 
-router = APIRouter(prefix="", tags=["endpoint_test"])
+router = APIRouter(prefix="/v1", tags=["endpoint_test"])
 
 
-@router.get("/")
+@router.get("/public")
 def public_route():
     return {"message": "Welcome to endpoint test"}
 
